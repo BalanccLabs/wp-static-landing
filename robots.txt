@@ -1,0 +1,8 @@
+# robots.txt for Balancc.app
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Sitemap location
+Sitemap: https://balancc.app/sitemap.xml
