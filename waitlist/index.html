@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Balancc — Pay to Join the Waitlist</title>
-  <meta name="description" content="Money comes in. Money disappears. Every month. Balancc protects your income, gives you daily guardrails, and helps you save without touching it. Pay to join the waitlist." />
+  <title>Balancc — Get Early Access</title>
+  <meta name="description" content="Money comes in. Money disappears. Every month. Balancc protects your income, gives you daily guardrails, and helps you save without touching it. Pay to unlock early access." />
   <link rel="canonical" href="/waitlist/" />
   <meta name="robots" content="index,follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Balancc — Pay to Join the Waitlist" />
+  <meta property="og:title" content="Balancc — Get Early Access" />
   <meta property="og:description" content="Protect your income. See what's safe to spend today. Build savings that actually grow — and stay." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://balancc.app/waitlist/" />
@@ -17,7 +17,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Balancc — Pay to Join the Waitlist" />
+  <meta name="twitter:title" content="Balancc — Get Early Access" />
   <meta name="twitter:description" content="Protect your income. See what's safe to spend today. Build savings that actually grow — and stay." />
   <meta name="twitter:image" content="https://balancc.app/wp-content/uploads/2025/05/cropped-BalanccLogo-02-270x270.png" />
 
@@ -90,9 +90,10 @@
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#tochi" class="text-[#667085] hover:text-[#0A0A0A]">Clarity</a>
+        <a href="#tracking" class="text-[#667085] hover:text-[#0A0A0A]">Insights</a>
         <a href="#toheeb" class="text-[#667085] hover:text-[#0A0A0A]">Consistency</a>
         <a href="#different" class="text-[#667085] hover:text-[#0A0A0A]">Why Balancc</a>
-        <a href="#pay" class="inline-flex items-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">Pay now</a>
+        <a href="#pay" class="inline-flex items-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">Get the app!</a>
       </nav>
     </div>
   </header>
@@ -103,7 +104,7 @@
       <div class="container grid gap-8 py-14 md:grid-cols-2 md:py-24">
         <div class="reveal [animation-delay:0ms] in-view:animate-fade-in-up">
           <p class="mb-3 inline-flex items-center rounded-full border border-border bg-white px-3 py-1 text-xs text-[#667085] shadow-sm">For earners ₦200k–₦1.5m/month</p>
-          <h1 class="text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+          <h1 class="text-3xl font-semibold leading-tight tracking-loose md:text-5xl">
             Money comes in. Money disappears. <span class="text-brand">Every. Single. Month.</span>
           </h1>
           <div class="mt-4 space-y-3 text-base text-[#101828] md:text-lg">
@@ -113,7 +114,7 @@
           </div>
           <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
             <a href="#pay" class="inline-flex items-center justify-center rounded-lg bg-brand px-5 py-3 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
-              <span class="mr-2">👉</span> Pay now. Join the waitlist.
+              <span class="mr-2">👉</span> Get the app now
             </a>
             <a href="#waterfall" class="inline-flex items-center justify-center rounded-lg border border-border bg-white px-5 py-3 text-base font-medium text-[#0A0A0A] shadow hover:bg-muted">See how it protects your income</a>
           </div>
@@ -123,50 +124,64 @@
         <div id="waterfall" class="reveal md:pl-8">
           <div class="rounded-2xl border border-border bg-white p-5 shadow-card">
             <div class="flex items-center justify-between">
-              <div class="text-sm text-[#475467]">Payday</div>
+              <div class="flex items-center gap-2">
+                <div class="text-sm text-[#475467]">Payday</div>
+                <span class="text-[11px] rounded-full bg-brand/10 px-2 py-0.5 text-brand">Auto‑routing</span>
+              </div>
               <div class="text-sm font-medium text-[#0A0A0A]">₦1,000,000</div>
             </div>
-            <div class="mt-4 space-y-3">
-              <!-- Row template -->
-              <div class="overflow-hidden rounded-lg border border-border">
-                <div class="h-10 w-0 bg-[linear-gradient(90deg,_#9F9BF7,_#736EDA)] text-white" style="--target:10%"></div>
+            <div class="mt-4 space-y-4">
+              <!-- Tithe -->
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]">
+                  <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand/10">🙏</span><span class="text-[#475467]">Tithe</span></div>
+                  <div class="flex items-center gap-3"><span class="font-medium text-[#0A0A0A]">₦100,000</span><span class="hidden sm:inline text-[#98A2B3]">10%</span></div>
+                </div>
+                <div class="relative mt-1 h-3 w-full overflow-hidden rounded-full border border-border bg-muted">
+                  <div class="absolute inset-y-0 left-0 w-0 rounded-full" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" title="Tithe 10%" style="--target:10%; background: linear-gradient(270deg, #9F9BF7, #736EDA); "></div>
+                </div>
               </div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-[#475467]">Tithe</span>
-                <span class="font-medium">₦100,000</span>
+              <!-- Rent -->
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]">
+                  <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand/10">🏠</span><span class="text-[#475467]">Rent</span></div>
+                  <div class="flex items-center gap-3"><span class="font-medium text-[#0A0A0A]">₦350,000</span><span class="hidden sm:inline text-[#98A2B3]">35%</span></div>
+                </div>
+                <div class="relative mt-1 h-3 w-full overflow-hidden rounded-full border border-border bg-muted">
+                  <div class="absolute inset-y-0 left-0 w-0 rounded-full" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35" title="Rent 35%" style="--target:35%; background: linear-gradient(270deg, #B7F9C2, #10B981); "></div>
+                </div>
               </div>
-
-              <div class="overflow-hidden rounded-lg border border-border">
-                <div class="h-10 w-0 bg-[linear-gradient(90deg,_#B7F9C2,_#10B981)] text-white" style="--target:35%"></div>
+              <!-- Emergency -->
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]">
+                  <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand/10">🆘</span><span class="text-[#475467]">Emergency</span></div>
+                  <div class="flex items-center gap-3"><span class="font-medium text-[#0A0A0A]">₦150,000</span><span class="hidden sm:inline text-[#98A2B3]">15%</span></div>
+                </div>
+                <div class="relative mt-1 h-3 w-full overflow-hidden rounded-full border border-border bg-muted">
+                  <div class="absolute inset-y-0 left-0 w-0 rounded-full" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="15" title="Emergency 15%" style="--target:15%; background: linear-gradient(270deg, #FBD38D, #F59E0B); "></div>
+                </div>
               </div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-[#475467]">Rent</span>
-                <span class="font-medium">₦350,000</span>
+              <!-- Family -->
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]">
+                  <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand/10">👪</span><span class="text-[#475467]">Family</span></div>
+                  <div class="flex items-center gap-3"><span class="font-medium text-[#0A0A0A]">₦100,000</span><span class="hidden sm:inline text-[#98A2B3]">10%</span></div>
+                </div>
+                <div class="relative mt-1 h-3 w-full overflow-hidden rounded-full border border-border bg-muted">
+                  <div class="absolute inset-y-0 left-0 w-0 rounded-full" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" title="Family 10%" style="--target:10%; background: linear-gradient(270deg, #FCA5A5, #EF4444); "></div>
+                </div>
               </div>
-
-              <div class="overflow-hidden rounded-lg border border-border">
-                <div class="h-10 w-0 bg-[linear-gradient(90deg,_#FBD38D,_#F59E0B)] text-white" style="--target:15%"></div>
+              <!-- Safe to Spend -->
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]">
+                  <div class="flex items-center gap-2"><span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-brand/10">💳</span><span class="text-[#475467]">Safe‑to‑Spend</span></div>
+                  <div class="flex items-center gap-3"><span class="font-medium text-[#0A0A0A]">₦300,000</span><span class="hidden sm:inline text-[#98A2B3]">30%</span></div>
+                </div>
+                <div class="relative mt-1 h-3 w-full overflow-hidden rounded-full border border-border bg-muted">
+                  <div class="absolute inset-y-0 left-0 w-0 rounded-full" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30" title="Safe‑to‑Spend 30%" style="--target:30%; background: linear-gradient(270deg, #A7F3D0, #14B8A6); "></div>
+                </div>
               </div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-[#475467]">Emergency</span>
-                <span class="font-medium">₦150,000</span>
-              </div>
-
-              <div class="overflow-hidden rounded-lg border border-border">
-                <div class="h-10 w-0 bg-[linear-gradient(90deg,_#FCA5A5,_#EF4444)] text-white" style="--target:10%"></div>
-              </div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-[#475467]">Family</span>
-                <span class="font-medium">₦100,000</span>
-              </div>
-
-              <div class="overflow-hidden rounded-lg border border-border">
-                <div class="h-10 w-0 bg-[linear-gradient(90deg,_#A7F3D0,_#14B8A6)] text-white" style="--target:30%"></div>
-              </div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-[#475467]">Safe-to-Spend</span>
-                <span class="font-medium">₦300,000</span>
-              </div>
+             
             </div>
             <p class="mt-4 text-sm text-[#667085]">Balancc auto-routes your income into protected Bags the instant it lands. Your Safe‑to‑Spend updates daily — no more guessing.</p>
           </div>
@@ -213,21 +228,116 @@
       </div>
     </section>
 
+    <section id="tracking" class="py-16 md:py-24">
+      <div class="container">
+        <div class="reveal text-center">
+          <h2 class="text-2xl font-semibold md:text-4xl">Know where your money goes — every day</h2>
+          <p class="mt-3 text-[#475467]">Balancc pulls your bank transactions every morning, cleans up cryptic POS/USSD texts, auto‑categorizes them, and shows exactly what’s eating your money. Your Safe‑to‑Spend adjusts instantly.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🔄</div>
+            <h3 class="text-lg font-semibold">Daily syncs</h3>
+            <p class="mt-2 text-sm text-[#667085]">Connect your bank once. New transactions appear automatically every day.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🏷️</div>
+            <h3 class="text-lg font-semibold">Clean statements + auto‑categorization</h3>
+            <p class="mt-2 text-sm text-[#667085]">“PR123 GTB POS 033” becomes <span class="font-medium">Spar Lekki</span>. We group spending by food, transport, family, bills, and more — and learn from your edits.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">📈</div>
+            <h3 class="text-lg font-semibold">Top drains</h3>
+            <p class="mt-2 text-sm text-[#667085]">See the categories and merchants eating the most this week and month — instantly.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">📅</div>
+            <h3 class="text-lg font-semibold">Recurring & bills</h3>
+            <p class="mt-2 text-sm text-[#667085]">We detect subscriptions and rent/school fees so you’re never surprised. Get reminders before they hit.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🔔</div>
+            <h3 class="text-lg font-semibold">Smart alerts</h3>
+            <p class="mt-2 text-sm text-[#667085]">Spending spike? Duplicate charge? We notify you. Your Safe‑to‑Spend updates automatically.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🧾</div>
+            <h3 class="text-lg font-semibold">Notes, tags, export</h3>
+            <p class="mt-2 text-sm text-[#667085]">Add notes or tags to any transaction, attach receipts, and export CSV whenever you want.</p>
+          </div>
+        </div>
+        <!-- What you'll see every morning -->
+        <div class="reveal mt-8 grid items-start gap-6 md:grid-cols-2">
+          <div>
+            <h3 class="text-lg font-semibold">What you’ll see every morning</h3>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-[#475467]">
+              <li>Yesterday’s total spend vs your weekly average.</li>
+              <li>Top drain category and top merchant.</li>
+              <li>Bills due in the next 7 days — no surprises.</li>
+              <li>Suspicious or duplicate charges flagged for review.</li>
+              <li>Today’s Safe‑to‑Spend, already adjusted.</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-border bg-white p-5 shadow-card text-sm">
+            <div class="flex items-center justify-between">
+              <div class="text-xs uppercase tracking-wide text-[#98A2B3]">Daily Digest</div>
+              <div class="text-xs text-[#98A2B3]">9:00 AM</div>
+            </div>
+            <ul class="mt-3 space-y-2">
+              <li>🟣 You spent ₦18,200 yesterday (‑₦3,100 vs avg)</li>
+              <li>📊 Top drain: <span class="font-medium">Food</span> (₦8,600) • Top merchant: <span class="font-medium">Jumia</span></li>
+              <li>📅 Bills due soon: Netflix (₦3,600) on Sat</li>
+              <li>⚠️ Duplicate charge suspected at POS — review</li>
+              <li>✅ Safe‑to‑Spend today: <span class="font-medium">₦24,900</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Weekly snapshot card -->
+        <div class="reveal mt-8 rounded-2xl border border-border bg-white p-6 shadow-card">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wide text-[#98A2B3]">Last 7 days</div>
+              <h3 class="mt-1 text-lg font-semibold">Your Money Snapshot</h3>
+              <p class="mt-1 text-sm text-[#667085]">Top drain: <span class="font-medium">Food</span> (₦42,800) • Top merchant: <span class="font-medium">Jumia</span> • Savings added: <span class="font-medium">₦25,000</span></p>
+            </div>
+            <div class="grid w-full gap-3 sm:grid-cols-3 md:w-auto">
+              <div class="rounded-lg border border-border p-3 text-center">
+                <div class="text-xs text-[#98A2B3]">Safe‑to‑Spend</div>
+                <div class="mt-1 text-base font-semibold text-success">+₦6,500</div>
+              </div>
+              <div class="rounded-lg border border-border p-3 text-center">
+                <div class="text-xs text-[#98A2B3]">Transactions</div>
+                <div class="mt-1 text-base font-semibold">58</div>
+              </div>
+              <div class="rounded-lg border border-border p-3 text-center">
+                <div class="text-xs text-[#98A2B3]">Alerts</div>
+                <div class="mt-1 text-base font-semibold">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="reveal mt-8 text-center text-xs text-[#98A2B3]">Secure, read‑only bank connections. You stay in control and can disconnect anytime.</p>
+      </div>
+    </section>
+
     <!-- For the Toheebs (Consistency Seekers) -->
     <section id="toheeb" class="py-16 md:py-24">
       <div class="container grid gap-8 md:grid-cols-2">
         <div class="reveal">
-          <h2 class="text-2xl font-semibold md:text-4xl">You’ve tried to save. It never sticks.</h2>
+          <h2 class="text-2xl font-semibold md:text-4xl">Your savings aren’t safe. That’s the problem.</h2>
           <div class="mt-4 space-y-3 text-[#475467]">
-            <p>You save. Then you touch it. Then it’s gone. Sound familiar?</p>
-            <p>Balancc auto-routes your income into protected Bags: rent, family, emergency, goals. Our FlexLock adds gentle friction:</p>
+            <p>You don’t fail at saving because you’re careless.</p>
+            <p>You fail because your money is too easy to reach.</p>
+            <p>One late‑night transfer. One ‘urgent’ weekend spend. And months of saving vanish.</p>
+            <p class="font-medium text-[#0A0A0A]">With Balancc, that ends.</p>
+            <p class="pt-1">Here’s how your savings grow — and stay:</p>
             <ul class="list-disc pl-5 space-y-2">
-              <li>Small SOS cash for emergencies.</li>
-              <li>Cooling-off timers before you withdraw.</li>
-              <li>Automatic recovery if you dip in.</li>
+              <li><span class="font-medium">Auto‑routing:</span> money never sits idle in your main account.</li>
+              <li><span class="font-medium">FlexLock:</span> friction before you withdraw, so you think twice.</li>
+              <li><span class="font-medium">SOS buffer:</span> a little lifeline when life throws punches — scaled to your income.</li>
             </ul>
           </div>
-          <p class="mt-4 font-medium text-[#0A0A0A]">For the first time, you’ll build savings that actually grow — and stay.</p>
+          <p class="mt-4 font-medium text-[#0A0A0A]">“Your money is finally safe from the person who spends it — you.”</p>
         </div>
         <div class="reveal">
           <div class="rounded-2xl border border-border bg-white p-6 shadow-card">
@@ -238,7 +348,7 @@
             <ul class="mt-4 space-y-3 text-sm">
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 inline-block h-2.5 w-2.5 rounded-full bg-success"></span>
-                <span><span class="font-medium">SOS:</span> Withdraw up to ₦10,000 instantly for genuine emergencies.</span>
+                <span><span class="font-medium">SOS:</span> Instant access to a small, dynamic buffer that scales with your balance (e.g., up to 2–5%) — enough for real emergencies without derailing your goals.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="mt-0.5 inline-block h-2.5 w-2.5 rounded-full bg-warning"></span>
@@ -304,7 +414,7 @@
           <p class="mx-auto mt-3 max-w-2xl text-[#475467]">You’ve tried saving apps and spreadsheets. They don’t work. This will.</p>
           <div class="mt-6">
             <a href="#pay" class="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-4 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
-              <span class="mr-2">👉</span> Pay today. Secure your spot. Get clarity and control.
+              <span class="mr-2">👉</span> Pay today. Take control of your money.
             </a>
           </div>
         </div>
@@ -317,7 +427,7 @@
         <dialog id="payDialog" class="backdrop:bg-black/40 rounded-2xl border border-border p-0 open:animate-fade-in-up w-full max-w-lg shadow-card">
           <form method="dialog" class="flex flex-col">
             <div class="flex items-center justify-between border-b border-border px-6 py-4">
-              <h3 class="text-lg font-semibold">Join the paid waitlist</h3>
+              <h3 class="text-lg font-semibold">Unlock early access</h3>
               <button type="submit" aria-label="Close" class="rounded-md p-2 text-[#667085] hover:bg-muted">✕</button>
             </div>
             <div class="px-6 py-5 space-y-4">
@@ -337,7 +447,7 @@
             </div>
             <div class="flex items-center justify-end gap-3 border-t border-border px-6 py-4">
               <button type="submit" class="inline-flex items-center justify-center rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium hover:bg-muted">Cancel</button>
-              <button type="button" id="payAction" class="inline-flex items-center justify-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 disabled:opacity-60">Pay & Join</button>
+              <button type="button" id="payAction" class="inline-flex items-center justify-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 disabled:opacity-60">Pay & Unlock access</button>
             </div>
           </form>
         </dialog>

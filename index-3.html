@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balancc — Money comes in. Money disappears.</title>
+  <meta name="description" content="Money comes in. Money disappears. Every. Single. Month. Balancc protects your income, shows where it goes, and makes savings grow — and stay. Pay to join early access." />
+  <link rel="canonical" href="https://balancc.app/index-3.html" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#736EDA" />
+  <meta name="application-name" content="Balancc" />
+  <meta name="apple-mobile-web-app-title" content="Balancc" />
+  <meta name="author" content="Balancc" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Balancc — Money comes in. Money disappears." />
+  <meta property="og:description" content="Protect your income, see what's safe to spend, and watch your goals fund themselves automatically." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://balancc.app/index-3.html" />
+  <meta property="og:image" content="https://balancc.app/wp-content/uploads/2025/05/cropped-BalanccLogo-02-270x270.png" />
+  <meta property="og:image:alt" content="Balancc logo" />
+  <meta property="og:site_name" content="Balancc" />
+  <meta property="og:locale" content="en_NG" />
+  <meta property="og:image:width" content="270" />
+  <meta property="og:image:height" content="270" />
+  <meta property="og:updated_time" content="2025-09-05" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Balancc — Money comes in. Money disappears." />
+  <meta name="twitter:description" content="Protect your income, see what's safe to spend, and watch your goals fund themselves automatically." />
+  <meta name="twitter:image" content="https://balancc.app/wp-content/uploads/2025/05/cropped-BalanccLogo-02-270x270.png" />
+  <meta name="twitter:image:alt" content="Balancc logo" />
+
+  <link rel="alternate" hreflang="en-NG" href="https://balancc.app/index-3.html" />
+  <link rel="alternate" hreflang="x-default" href="https://balancc.app/index-3.html" />
+
+  <link rel="icon" href="/wp-content/uploads/2025/05/cropped-BalanccLogo-02-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2025/05/cropped-BalanccLogo-02-180x180.png">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="/fonts.css" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Balancc",
+        "url": "https://balancc.app/",
+        "logo": "https://balancc.app/wp-content/uploads/2025/05/cropped-BalanccLogo-02-270x270.png"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Balancc — Money comes in. Money disappears.",
+        "url": "https://balancc.app/index-3.html",
+        "description": "Money comes in. Money disappears. Every. Single. Month. Balancc protects your income, shows where it goes, and makes savings grow — and stay. Pay to join early access.",
+        "inLanguage": "en-NG"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind theme (mimics shadcn/ui tokens)
+    tailwind.config = {
+      theme: {
+        extend: {
+          container: { center: true, padding: { DEFAULT: '1rem', md: '2rem' } },
+          colors: {
+            brand: {
+              DEFAULT: '#736EDA', // primary
+              fg: '#ffffff',
+              50: '#f3f2fe', 100: '#e7e6fd', 200: '#cfcdfb', 300: '#b7b4f9', 400: '#9f9bf7', 500: '#877ff0', 600: '#736EDA', 700: '#5c57b0', 800: '#48448a', 900: '#343164'
+            },
+            muted: { DEFAULT: '#f6f7fb', fg: '#667085' },
+            card: { DEFAULT: '#ffffff', fg: '#0a0a0a' },
+            border: '#E5E7EB',
+            success: '#10B981',
+            warning: '#F59E0B',
+            danger: '#EF4444'
+          },
+          boxShadow: { card: '0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.10)' },
+          keyframes: {
+            'fade-in-up': { '0%': { opacity: 0, transform: 'translateY(12px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            'fill': { '0%': { width: '0%' }, '100%': { width: 'var(--target)' } }
+          },
+          animation: {
+            'fade-in-up': 'fade-in-up 600ms ease-out forwards',
+            'fill': 'fill 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --brand: #736EDA; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'euclid', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(16px); }
+    .reveal.in-view { opacity: 1; transform: translateY(0); transition: opacity .6s ease, transform .6s ease; }
+    .bar { height: 10px; border-radius: 9999px; width: 0; }
+  </style>
+</head>
+<body class="bg-white text-[#0A0A0A]">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full border-b border-border bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <div class="container flex h-14 items-center justify-between">
+      <a href="/" class="inline-flex items-center gap-2">
+        <img src="/wp-content/uploads/2025/05/BalanccLogo-01-300x52.png" alt="Balancc" class="h-6 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#clarity" class="text-[#667085] hover:text-[#0A0A0A]">Clarity</a>
+        <a href="#consistency" class="text-[#667085] hover:text-[#0A0A0A]">Consistency</a>
+        <a href="#goals" class="text-[#667085] hover:text-[#0A0A0A]">Goals</a>
+        <a href="#different" class="text-[#667085] hover:text-[#0A0A0A]">Why Balancc</a>
+        <a href="/waitlist/#pay" class="inline-flex items-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">Pay now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="container grid gap-8 py-14 md:grid-cols-2 md:py-24">
+        <div class="reveal [animation-delay:0ms] in-view:animate-fade-in-up">
+          <h1 class="text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+            Money comes in. Money disappears. <span class="text-brand">Every. Single. Month.</span>
+          </h1>
+          <div class="mt-4 space-y-3 text-base text-[#101828] md:text-lg">
+            <p>You earn well. You hustle. But somehow, you’re broke before the month ends.</p>
+            <p>You don’t need more discipline. You need a system that protects your money and shows you exactly where it’s going.</p>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2 text-sm text-[#667085]">
+            <span class="inline-flex items-center gap-2 rounded-full border border-border bg-white px-3 py-1">🔄 Daily syncs</span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-border bg-white px-3 py-1">🧭 Safe‑to‑Spend</span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-border bg-white px-3 py-1">🔒 Protected Bags</span>
+          </div>
+          <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+            <a href="/waitlist/#pay" class="inline-flex items-center justify-center rounded-lg bg-brand px-5 py-3 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
+              <span class="mr-2">👉</span> Pay today. Secure your spot.
+            </a>
+            <a href="#clarity" class="inline-flex items-center justify-center rounded-lg border border-border bg-white px-5 py-3 text-base font-medium text-[#0A0A0A] shadow hover:bg-muted">See how it works</a>
+          </div>
+        </div>
+
+        <!-- Visual: income routed instantly -->
+        <div class="reveal md:pl-8">
+          <div class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="flex items-center justify-between">
+              <div class="text-sm text-[#667085]">Income routed instantly</div>
+              <div class="text-sm font-medium">₦1,000,000</div>
+            </div>
+            <div class="mt-4 space-y-4">
+              <div>
+                <div class="bar bg-[linear-gradient(90deg,_#9F9BF7,_#736EDA)]" style="--target:35%"></div>
+                <div class="mt-1 flex items-center justify-between text-xs text-[#667085]"><span>Rent</span><span class="text-[#0A0A0A] font-medium">₦350,000</span></div>
+              </div>
+              <div>
+                <div class="bar bg-[linear-gradient(90deg,_#B7F9C2,_#10B981)]" style="--target:20%"></div>
+                <div class="mt-1 flex items-center justify-between text-xs text-[#667085]"><span>Emergency</span><span class="text-[#0A0A0A] font-medium">₦200,000</span></div>
+              </div>
+              <div>
+                <div class="bar bg-[linear-gradient(90deg,_#FCA5A5,_#EF4444)]" style="--target:15%"></div>
+                <div class="mt-1 flex items-center justify-between text-xs text-[#667085]"><span>Family</span><span class="text-[#0A0A0A] font-medium">₦150,000</span></div>
+              </div>
+              <div>
+                <div class="bar bg-[linear-gradient(90deg,_#A7F3D0,_#14B8A6)]" style="--target:30%"></div>
+                <div class="mt-1 flex items-center justify-between text-xs text-[#667085]"><span>Safe‑to‑Spend</span><span class="text-[#0A0A0A] font-medium">₦300,000</span></div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs text-[#98A2B3]">Numbers are examples. Yours adjust automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Clarity -->
+    <section id="clarity" class="border-t border-border bg-muted py-16 md:py-24">
+      <div class="container grid gap-8 md:grid-cols-2">
+        <div class="order-2 md:order-1 reveal">
+          <h2 class="text-2xl font-semibold md:text-4xl">Finally know where your money goes.</h2>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-xl border border-border bg-white p-4">
+              <div class="mb-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">🔄</div>
+              <div class="text-sm font-medium">Daily syncs</div>
+              <p class="mt-1 text-sm text-[#667085]">Your bank transactions sync automatically, every day.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-white p-4">
+              <div class="mb-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">🏷️</div>
+              <div class="text-sm font-medium">Auto‑categorize</div>
+              <p class="mt-1 text-sm text-[#667085]">Food, bills, transport, shopping — cleaned and grouped.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-white p-4">
+              <div class="mb-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">📈</div>
+              <div class="text-sm font-medium">Top drains</div>
+              <p class="mt-1 text-sm text-[#667085]">See what swallows your money the most.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-white p-4">
+              <div class="mb-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">✅</div>
+              <div class="text-sm font-medium">Just truth</div>
+              <p class="mt-1 text-sm text-[#667085]">No spreadsheets. No budgets. Just truth.</p>
+            </div>
+          </div>
+          <p class="mt-4 font-medium text-[#0A0A0A] italic">“No more guessing. You’ll always know what’s safe to spend — today.”</p>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <div class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-[#475467]">Today’s Safe‑to‑Spend</span>
+              <span class="text-sm text-success">Updated 9:00 AM</span>
+            </div>
+            <div class="mt-3 text-4xl font-semibold tracking-tight">₦24,900</div>
+            <p class="mt-2 text-sm text-[#667085]">After rent, family, and savings are already protected.</p>
+            <div class="mt-6 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-lg border border-border p-4">
+                <div class="text-xs text-[#667085]">Bills due this week</div>
+                <div class="mt-1 text-base font-medium">₦82,000</div>
+              </div>
+              <div class="rounded-lg border border-border p-4">
+                <div class="text-xs text-[#667085]">Saved this month</div>
+                <div class="mt-1 text-base font-medium">₦45,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Consistency -->
+    <section id="consistency" class="py-16 md:py-24">
+      <div class="container grid gap-8 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="text-2xl font-semibold md:text-4xl">You don’t fail at saving because you’re careless. You fail because your money isn’t protected.</h2>
+          <div class="mt-4 space-y-3 text-[#475467]">
+            <p>Every month you start saving. And every month, you touch it. Rent delayed. Bills pile up. That “small transfer” ruins everything.</p>
+            <p>Balancc fixes this by auto‑routing your income into protected Bags:</p>
+            <ul class="list-disc pl-5">
+              <li>Rent</li>
+              <li>Emergency</li>
+              <li>Family support</li>
+              <li>Goals</li>
+            </ul>
+          </div>
+          <div class="mt-4 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-xl border border-border bg-white p-4 text-sm">
+              <div class="mb-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand/10 text-brand">1</div>
+              <div class="font-medium">Auto‑routing</div>
+              <p class="mt-1 text-[#667085]">Essentials get funded first.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-white p-4 text-sm">
+              <div class="mb-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand/10 text-brand">2</div>
+              <div class="font-medium">FlexLock</div>
+              <p class="mt-1 text-[#667085]">Gentle friction before you withdraw.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-white p-4 text-sm">
+              <div class="mb-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand/10 text-brand">3</div>
+              <div class="font-medium">SOS + Recovery</div>
+              <p class="mt-1 text-[#667085]">Emergency buffer + auto top‑up on next inflow.</p>
+            </div>
+          </div>
+          <p class="mt-4 font-medium text-[#0A0A0A]">“This time, your savings won’t just start. They’ll grow — and stay.”</p>
+        </div>
+        <div class="reveal">
+          <div class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-[#475467]">FlexLock</span>
+              <span class="text-xs rounded-full bg-[#F6F7FB] px-2 py-1 text-[#667085]">Gentle friction</span>
+            </div>
+            <ul class="mt-4 space-y-3 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 inline-block h-2.5 w-2.5 rounded-full bg-success"></span>
+                <span><span class="font-medium">SOS:</span> Dynamic buffer that scales with your balance — enough for real emergencies without derailing your goals.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 inline-block h-2.5 w-2.5 rounded-full bg-warning"></span>
+                <span><span class="font-medium">Cooling‑off:</span> Set 12–72h timers to avoid impulse withdrawals.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-0.5 inline-block h-2.5 w-2.5 rounded-full bg-brand"></span>
+                <span><span class="font-medium">Auto‑recovery:</span> If you dip in, Balancc tops it back up on your next inflow.</span>
+              </li>
+            </ul>
+            <div class="mt-6 rounded-lg border border-dashed border-border p-4 text-sm text-[#667085]">Connect your salary account once. Funds auto‑route the moment money lands.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Automatic Goals -->
+    <section id="goals" class="border-y border-border bg-muted py-16 md:py-24">
+      <div class="container grid gap-8 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="text-2xl font-semibold md:text-4xl">Your goals fund themselves. Automatically.</h2>
+          <p class="mt-3 text-[#475467]">The hardest part of saving isn’t deciding what to save for — it’s doing it every time. With Balancc, the moment your income lands, your goals are funded in order of priority:</p>
+          <ul class="mt-3 list-disc pl-5 text-[#475467]">
+            <li>Rent gets its share first.</li>
+            <li>Family is covered.</li>
+            <li>Emergency fund grows in the background.</li>
+            <li>Then your flex goals — travel, new phone, laptop — get their cut.</li>
+          </ul>
+          <p class="mt-3 text-[#475467]">No mental math. No discipline. No guilt. Just Bags filling up on autopilot.</p>
+          <p class="mt-4 font-medium text-[#0A0A0A] italic">“Imagine seeing rent, emergency, and travel all growing at the same time — without lifting a finger.”</p>
+        </div>
+        <div class="reveal">
+          <div class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="text-sm text-[#667085]">Goal progress (example)</div>
+            <div class="mt-4 space-y-4">
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]"><span>Rent (₦1.2m/yr)</span><span class="text-[#0A0A0A] font-medium">68%</span></div>
+                <div class="mt-1 bar bg-[linear-gradient(90deg,_#9F9BF7,_#736EDA)]" style="--target:68%"></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]"><span>Family support</span><span class="text-[#0A0A0A] font-medium">45%</span></div>
+                <div class="mt-1 bar bg-[linear-gradient(90deg,_#B7F9C2,_#10B981)]" style="--target:45%"></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]"><span>Emergency fund</span><span class="text-[#0A0A0A] font-medium">30%</span></div>
+                <div class="mt-1 bar bg-[linear-gradient(90deg,_#FBD38D,_#F59E0B)]" style="--target:30%"></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-xs text-[#667085]"><span>Travel</span><span class="text-[#0A0A0A] font-medium">15%</span></div>
+                <div class="mt-1 bar bg-[linear-gradient(90deg,_#A7F3D0,_#14B8A6)]" style="--target:15%"></div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs text-[#98A2B3]">Progress animates when this card comes into view.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Why Balancc is Different -->
+    <section id="different" class="py-16 md:py-24">
+      <div class="container">
+        <h2 class="reveal text-center text-2xl font-semibold md:text-4xl">Budget apps feel like homework. Lock‑only apps feel like punishment. <span class="text-brand">Balancc feels like freedom.</span></h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🔒</div>
+            <h3 class="text-lg font-semibold">Not just locks</h3>
+            <p class="mt-2 text-sm text-[#667085]">Humane savings. Protected, but flexible with SOS withdrawals.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🧭</div>
+            <h3 class="text-lg font-semibold">Not budgets</h3>
+            <p class="mt-2 text-sm text-[#667085]">One daily guardrail, not 20 categories.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+            <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand">🇳🇬</div>
+            <h3 class="text-lg font-semibold">Built for us</h3>
+            <p class="mt-2 text-sm text-[#667085]">Tithes, black tax, rent deadlines — real Nigerian realities.</p>
+          </div>
+        </div>
+        <p class="reveal mx-auto mt-6 max-w-2xl text-center font-medium text-[#0A0A0A] italic">“Finally, a money app that works the way you actually live.”</p>
+      </div>
+    </section>
+
+    <!-- Section 5: Social Proof -->
+    <section id="social" class="border-y border-border bg-muted py-16 md:py-24">
+      <div class="container grid gap-6 md:grid-cols-2">
+        <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+          <div class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">🧑🏽‍💻</div>
+          <div class="text-xs uppercase tracking-wide text-[#98A2B3]">Clarity — Tochi‑type</div>
+          <blockquote class="mt-1 text-lg leading-relaxed">“I earn in dollars but was always broke in naira. Budget apps felt like stress. With Balancc, I just open the app and I see where my money went — instantly. For the first time, I actually feel in control.”</blockquote>
+        </div>
+        <div class="reveal rounded-2xl border border-border bg-white p-6 shadow-card">
+          <div class="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand">👨🏾‍💼</div>
+          <div class="text-xs uppercase tracking-wide text-[#98A2B3]">Consistency — Toheeb‑type</div>
+          <blockquote class="mt-1 text-lg leading-relaxed">“I used to save every month, then touch it before month end. It was frustrating. Balancc made it impossible to fail — my rent, family, and emergency money are protected. Three months in, and my savings have never been this consistent.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="border-t border-border bg-gradient-to-b from-white to-[#F6F7FB] py-16 md:py-24">
+      <div class="container">
+        <div class="reveal rounded-3xl border border-border bg-white p-8 text-center shadow-card md:p-12">
+          <h2 class="text-2xl font-semibold md:text-4xl">How much longer will you let your money slip away?</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-[#475467]">You’ve tried saving apps. You’ve tried spreadsheets. They don’t work. Balancc does — because it protects your money from disappearing, while giving you clarity every day.</p>
+          <div class="mt-6">
+            <a href="/waitlist/#pay" class="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-4 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
+              <span class="mr-2">👉</span> Pay today. Secure your spot. Get clarity and control now.
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-border py-10 text-center text-sm text-[#667085]">
+    <div class="container">© <span id="year"></span> Balancc. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Intersection Observer for reveal + animating bars when visible
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          // Animate bars inside this section/card
+          entry.target.querySelectorAll('.bar').forEach((bar, i) => {
+            setTimeout(() => { bar.style.animation = 'fill 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards'; }, i * 120);
+          });
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Kick off hero bars on load
+    window.addEventListener('load', () => {
+      document.querySelectorAll('section .bar').forEach((bar, i) => {
+        // Only animate hero bars immediately visible
+        if (bar.closest('section')?.getBoundingClientRect().top < window.innerHeight) {
+          setTimeout(() => { bar.style.animation = 'fill 1200ms cubic-bezier(0.22, 1, 0.36, 1) forwards'; }, i * 120);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
