@@ -93,7 +93,7 @@
         <a href="#tracking" class="text-[#667085] hover:text-[#0A0A0A]">Insights</a>
         <a href="#toheeb" class="text-[#667085] hover:text-[#0A0A0A]">Consistency</a>
         <a href="#different" class="text-[#667085] hover:text-[#0A0A0A]">Why Balancc</a>
-        <a href="#pay" class="inline-flex items-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">Get the app!</a>
+        <a href="https://account.balancc.app/get-started" class="inline-flex items-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">Get Balancc</a>
       </nav>
     </div>
   </header>
@@ -113,8 +113,8 @@
             <p>Balancc fixes that — by protecting your income, giving you daily guardrails, and helping you save without touching it.</p>
           </div>
           <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row">
-            <a href="#pay" class="inline-flex items-center justify-center rounded-lg bg-brand px-5 py-3 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
-              <span class="mr-2">👉</span> Get the app now
+            <a href="https://account.balancc.app/get-started" class="inline-flex items-center justify-center rounded-lg bg-brand px-5 py-3 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
+              <span class="mr-2">👉</span> Get Balancc now
             </a>
             <a href="#waterfall" class="inline-flex items-center justify-center rounded-lg border border-border bg-white px-5 py-3 text-base font-medium text-[#0A0A0A] shadow hover:bg-muted">See how it protects your income</a>
           </div>
@@ -413,50 +413,18 @@
           <h2 class="text-2xl font-semibold md:text-4xl">How much longer will you let money slip away?</h2>
           <p class="mx-auto mt-3 max-w-2xl text-[#475467]">You’ve tried saving apps and spreadsheets. They don’t work. This will.</p>
           <div class="mt-6">
-            <a href="#pay" class="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-4 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
-              <span class="mr-2">👉</span> Pay today. Take control of your money.
+            <a href="https://account.balancc.app/get-started" class="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-4 text-base font-medium text-white shadow hover:bg-brand/90 focus:outline-none focus:ring-2 focus:ring-brand/40">
+              <span class="mr-2">👉</span> Get Balancc now
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pay Modal / Placeholder Form -->
-    <section id="pay" class="py-0">
-      <div class="container">
-        <dialog id="payDialog" class="backdrop:bg-black/40 rounded-2xl border border-border p-0 open:animate-fade-in-up w-full max-w-lg shadow-card">
-          <form method="dialog" class="flex flex-col">
-            <div class="flex items-center justify-between border-b border-border px-6 py-4">
-              <h3 class="text-lg font-semibold">Unlock early access</h3>
-              <button type="submit" aria-label="Close" class="rounded-md p-2 text-[#667085] hover:bg-muted">✕</button>
-            </div>
-            <div class="px-6 py-5 space-y-4">
-              <p class="text-sm text-[#475467]">Pay a small one-time fee to secure early access. You’ll get priority onboarding and founder updates.</p>
-              <div class="grid gap-3">
-                <label class="text-sm font-medium" for="email">Email</label>
-                <input id="email" type="email" required placeholder="you@example.com" class="h-11 rounded-lg border border-border px-3 outline-none focus:ring-2 focus:ring-brand/40" />
-              </div>
-              <div class="grid gap-3">
-                <label class="text-sm font-medium" for="amount">Amount</label>
-                <select id="amount" class="h-11 rounded-lg border border-border px-3 outline-none focus:ring-2 focus:ring-brand/40">
-                  <option value="5000">₦5,000 — Early access</option>
-                  <option value="10000">₦10,000 — Early + priority</option>
-                </select>
-              </div>
-              <div class="rounded-lg border border-dashed border-border p-4 text-sm text-[#667085]">Payment link placeholder — connect Stripe/Paystack here.</div>
-            </div>
-            <div class="flex items-center justify-end gap-3 border-t border-border px-6 py-4">
-              <button type="submit" class="inline-flex items-center justify-center rounded-lg border border-border bg-white px-4 py-2 text-sm font-medium hover:bg-muted">Cancel</button>
-              <button type="button" id="payAction" class="inline-flex items-center justify-center rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white shadow hover:bg-brand/90 disabled:opacity-60">Pay & Unlock access</button>
-            </div>
-          </form>
-        </dialog>
-      </div>
-    </section>
   </main>
 
   <footer class="border-t border-border py-10 text-center text-sm text-[#667085]">
-    <div class="container">© <span id="year"></span> Balancc. All rights reserved.</div>
+    <div class="container">  Balancc. All rights reserved.</div>
   </footer>
 
   <script>
@@ -477,35 +445,6 @@
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Open pay modal when anchors clicked
-    const payDialog = document.getElementById('payDialog');
-    function openPayDialog(evt) {
-      if (payDialog && typeof payDialog.showModal === 'function') {
-        evt?.preventDefault?.();
-        payDialog.showModal();
-      }
-    }
-    document.querySelectorAll('a[href="#pay"]').forEach(a => {
-      a.addEventListener('click', openPayDialog);
-    });
-
-    // Placeholder payment action
-    const payBtn = document.getElementById('payAction');
-    if (payBtn) {
-      payBtn.addEventListener('click', () => {
-        // Replace with your Paystack/Stripe link
-        const amount = document.getElementById('amount')?.value || '5000';
-        const email = document.getElementById('email')?.value || '';
-        if (!email) {
-          alert('Please enter your email.');
-          return;
-        }
-        // Placeholder redirect (TODO: integrate payment provider)
-        const payUrl = `https://example.com/pay?email=${encodeURIComponent(email)}&amount=${encodeURIComponent(amount)}`;
-        window.location.href = payUrl;
-      });
-    }
 
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
