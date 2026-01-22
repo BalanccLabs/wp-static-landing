@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html data-wf-domain="www.balancc.app" data-wf-page="pitch-deck" data-wf-site="64c960739bf6482a11b90547" class="w-mod-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balancc - Investor Pitch Deck</title>
+  <meta content="Balancc is raising $200k to help millions feel in control of their money. See our pitch deck." name="description">
+  <meta content="Balancc - Investor Pitch Deck" property="og:title">
+  <meta content="Balancc is raising $200k to help millions feel in control of their money." property="og:description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="theme-color" content="#C6FF00">
+  
+  <link href="css/fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/onboard-official.webflow.shared.3fc425b4c.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+  <link href="logos/cropped-BalanccLogo-02-32x32.png" rel="shortcut icon" type="image/x-icon">
+  
+  <style>
+    :root {
+      --primary: #C6FF00;
+      --dark: #0a0a0a;
+      --dark-secondary: #141414;
+      --text: #FCF8E6;
+      --text-muted: rgba(252, 248, 230, 0.7);
+      --border: rgba(252, 248, 230, 0.12);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Euclid Circular A', sans-serif;
+      background-color: var(--dark);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+    
+    .pitch-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    /* Navigation */
+    .pitch-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .pitch-nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .pitch-nav img {
+      height: 32px;
+    }
+    
+    .pitch-nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    
+    .pitch-nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    
+    .pitch-nav-links a:hover {
+      color: var(--text);
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: var(--dark);
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .pitch-nav .btn-primary {
+      color: var(--dark) !important;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(198, 255, 0, 0.3);
+    }
+    
+    /* Hero Section */
+    .pitch-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      background: radial-gradient(ellipse at center top, rgba(198, 255, 0, 0.08) 0%, transparent 60%);
+    }
+    
+    .pitch-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+    
+    .pitch-hero h1 span {
+      color: var(--primary);
+    }
+    
+    .pitch-hero p {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    
+    .pitch-hero-stats {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    
+    .pitch-stat {
+      text-align: center;
+    }
+    
+    .pitch-stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .pitch-stat-label {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    
+    /* Slide Section */
+    .pitch-slide {
+      padding: 100px 0;
+      border-top: 1px solid var(--border);
+    }
+    
+    .pitch-slide:nth-child(even) {
+      background: var(--dark-secondary);
+    }
+    
+    .slide-header {
+      margin-bottom: 60px;
+    }
+    
+    .slide-number {
+      font-size: 0.75rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    
+    .slide-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    
+    .slide-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 700px;
+    }
+    
+    /* Problem Section */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .problem-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    
+    .problem-card-stat {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    
+    .problem-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+    
+    .problem-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    
+    .quote-block {
+      background: linear-gradient(135deg, rgba(198, 255, 0, 0.1) 0%, transparent 100%);
+      border-left: 4px solid var(--primary);
+      padding: 32px;
+      margin-top: 48px;
+      border-radius: 0 16px 16px 0;
+    }
+    
+    .quote-block p {
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 500;
+    }
+    
+    .citation-block {
+      margin-top: 32px;
+      text-align: center;
+    }
+    
+    .citation-block p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      font-style: italic;
+    }
+    
+    /* Solution Section */
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    @media (max-width: 900px) {
+      .solution-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .solution-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    
+    .solution-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+    
+    .solution-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(198, 255, 0, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .solution-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    
+    .solution-card .subtitle {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    
+    .solution-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    
+    .solution-card ul {
+      list-style: none;
+      margin-top: 16px;
+    }
+    
+    .solution-card ul li {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      padding: 8px 0;
+      border-top: 1px solid var(--border);
+    }
+    
+    .solution-card ul li:first-child {
+      border-top: none;
+    }
+    
+    /* Business Model Section */
+    .revenue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .revenue-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .revenue-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--primary);
+    }
+    
+    .revenue-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(198, 255, 0, 0.2);
+      position: absolute;
+      top: 16px;
+      right: 24px;
+    }
+    
+    .revenue-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      padding-right: 60px;
+    }
+    
+    .revenue-card .highlight {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    
+    .revenue-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    
+    /* Competitive Section */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 48px;
+      font-size: 0.95rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .comparison-table th {
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+    
+    .comparison-table th:last-child {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    
+    .comparison-table td:first-child {
+      font-weight: 500;
+    }
+    
+    .comparison-table td:last-child {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .check {
+      color: var(--primary);
+    }
+    
+    .cross {
+      color: #ff4d4d;
+    }
+    
+    .partial {
+      color: #ffaa00;
+    }
+    
+    /* Traction Section */
+    .traction-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .traction-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+    }
+    
+    .traction-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    
+    .traction-label {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .testimonial-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    
+    .testimonial-author {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+    
+    /* Ask Section */
+    .ask-section {
+      background: linear-gradient(135deg, rgba(198, 255, 0, 0.1) 0%, transparent 100%);
+    }
+    
+    .ask-amount {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    
+    .ask-type {
+      font-size: 1.5rem;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+    
+    .use-of-funds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .fund-item {
+      background: rgba(10, 10, 10, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+    
+    .fund-percent {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .fund-amount {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    
+    .fund-label {
+      font-weight: 600;
+    }
+    
+    /* Moat Section */
+    .moat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .moat-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    
+    .moat-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .moat-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 120px 0;
+      text-align: center;
+      background: radial-gradient(ellipse at center bottom, rgba(198, 255, 0, 0.1) 0%, transparent 60%);
+    }
+    
+    .cta-section h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    
+    .cta-section p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    
+    .btn-secondary:hover {
+      border-color: var(--text);
+      background: rgba(252, 248, 230, 0.05);
+    }
+    
+    /* Footer */
+    .pitch-footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    
+    .pitch-footer p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+    
+    .pitch-footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    /* Big Picture Section */
+    .evolution-block {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      margin-top: 48px;
+    }
+    
+    .evolution-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 24px 0;
+    }
+    
+    .evolution-row:first-child {
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .evolution-row.tomorrow {
+      padding-top: 24px;
+    }
+    
+    .evolution-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      min-width: 80px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .evolution-row.tomorrow .evolution-label {
+      color: var(--primary);
+    }
+    
+    .evolution-flow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    
+    .evolution-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 16px;
+      background: rgba(252, 248, 230, 0.05);
+      border-radius: 12px;
+      min-width: 80px;
+    }
+    
+    .evolution-item.highlight {
+      background: rgba(198, 255, 0, 0.1);
+      border: 1px solid rgba(198, 255, 0, 0.3);
+    }
+    
+    .evolution-icon {
+      font-size: 1.5rem;
+    }
+    
+    .evolution-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .evolution-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    
+    .evolution-arrow {
+      color: var(--text-muted);
+      font-size: 1.25rem;
+    }
+    
+    .expansion-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 48px;
+    }
+    
+    .expansion-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    
+    .expansion-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+    
+    .expansion-card h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    
+    .expansion-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    
+    .expansion-revenue {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .pitch-nav-links {
+        display: none;
+      }
+      
+      .pitch-hero-stats {
+        gap: 32px;
+      }
+      
+      .comparison-table {
+        font-size: 0.8rem;
+      }
+      
+      .comparison-table th,
+      .comparison-table td {
+        padding: 12px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="pitch-nav">
+    <div class="pitch-nav-inner">
+      <a href="/"><img src="logos/logo-white-full.png" alt="Balancc"></a>
+      <div class="pitch-nav-links">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#business-model">Business Model</a>
+        <a href="#traction">Traction</a>
+        <a href="#ask">The Ask</a>
+        <a href="#big-picture">Big Picture</a>
+        <a href="mailto:business@balan.cc" class="btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pitch-hero">
+    <div class="pitch-container">
+      <h1>"I earn money, but I keep spending money I shouldn't."</h1>
+      <p>This is a repeated monthly pattern for salary earners. They're not broke. They have income. But somehow, money still slips away.</p>
+      <a href="#problem" class="btn-primary">See How We Fix This</a>
+      
+      <div class="pitch-hero-stats">
+        <div class="pitch-stat">
+          <div class="pitch-stat-value">$200K</div>
+          <div class="pitch-stat-label">Raising Pre-Seed</div>
+        </div>
+        <div class="pitch-stat">
+          <div class="pitch-stat-value">72%</div>
+          <div class="pitch-stat-label">Adults Feel Financial Anxiety</div>
+        </div>
+        <div class="pitch-stat">
+          <div class="pitch-stat-value">$65B</div>
+          <div class="pitch-stat-label">African Fintech by 2030</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">The Problem</div>
+        <h2 class="slide-title">Traditional Banking is Broken for the Modern Worker</h2>
+        <p class="slide-subtitle">People don't need another expense tracker. They need a system that does the work for them.</p>
+      </div>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-card-stat">72%</div>
+          <h3>Financial Anxiety</h3>
+          <p>Adults feel anxious about their finances — even those with stable incomes.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-stat">2 weeks</div>
+          <h3>App Abandonment</h3>
+          <p>Most people quit budgeting apps within 2 weeks because they require daily tracking.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-stat">1 account</div>
+          <h3>No Structure</h3>
+          <p>Bills, spending, savings, and plans all live in one account — creating chaos.</p>
+        </div>
+      </div>
+      
+      <div class="quote-block">
+        <p>Knowing how to manage money ≠ Actually doing it</p>
+      </div>
+      
+      <div class="citation-block">
+        <p>Sources: American Psychological Association (2023) • Deloitte Global Millennial Survey (2022) • Financial Health Network (2023)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">The Solution</div>
+        <h2 class="slide-title">Balancc: Money Management That Works Without Daily Effort</h2>
+        <p class="slide-subtitle">We give your money structure — so you don't have to think about it every day. Set it up once. Let the system do the rest.</p>
+      </div>
+      
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-icon">💳</div>
+          <h3>Main Wallet</h3>
+          <div class="subtitle">Flexible Spending</div>
+          <p>Your flexible money — spend or move it anytime with no restrictions.</p>
+          <ul>
+            <li>No restrictions on usage</li>
+            <li>Move money freely</li>
+            <li>Full control</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🛍️</div>
+          <h3>Bags</h3>
+          <div class="subtitle">Bills & Expenses</div>
+          <p>Money with a job. Create bags for food, rent, transport, or utilities.</p>
+          <ul>
+            <li>Clear spending limits</li>
+            <li>Automated bill payments</li>
+            <li>System enforces discipline</li>
+          </ul>
+        </div>
+        <div class="solution-card">
+          <div class="solution-icon">🔒</div>
+          <h3>Vaults</h3>
+          <div class="subtitle">Long-term Savings</div>
+          <p>Lock your money for a set period and earn interest. No temptation to dip in.</p>
+          <ul>
+            <li>Earn interest on savings</li>
+            <li>50% paid upfront</li>
+            <li>Remove temptation completely</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Model -->
+  <section id="business-model" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">Business Model</div>
+        <h2 class="slide-title">How Balancc Makes Money</h2>
+        <p class="slide-subtitle">Multiple proven revenue streams — not a "figure it out later" business.</p>
+      </div>
+      
+      <div class="revenue-grid">
+        <div class="revenue-card">
+          <div class="revenue-number">1</div>
+          <h3>Bill Payment Fees</h3>
+          <div class="highlight">Commission per transaction</div>
+          <p>Users pay utilities, subscriptions, rent, and airtime through Balancc. We earn on each transaction. High-frequency, recurring, and sticky.</p>
+        </div>
+        <div class="revenue-card">
+          <div class="revenue-number">2</div>
+          <h3>Interest Spread</h3>
+          <div class="highlight">Vault deposits</div>
+          <p>User earns interest, we earn the spread from deposits held with custodial partners. Longer lock periods = higher spread.</p>
+        </div>
+        <div class="revenue-card">
+          <div class="revenue-number">3</div>
+          <h3>Card Transaction Revenue</h3>
+          <div class="highlight">1.5-2.5% per transaction</div>
+          <p>Interchange fees on card payments. Secondary revenue stream from daily spending activity.</p>
+        </div>
+        <div class="revenue-card">
+          <div class="revenue-number">4</div>
+          <h3>Float Income</h3>
+          <div class="highlight">Aggregate deposits</div>
+          <p>Interest earned on aggregate user deposits before payout. Scales with user growth.</p>
+        </div>
+        <div class="revenue-card">
+          <div class="revenue-number">5</div>
+          <h3>Premium Features</h3>
+          <div class="highlight">Roadmap</div>
+          <p>Advanced analytics, priority support, higher limits, and family/group accounts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitive Landscape -->
+  <section id="competitive" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">Competitive Landscape</div>
+        <h2 class="slide-title">Why Balancc Wins</h2>
+        <p class="slide-subtitle">We're not another budgeting app — we're a behavior-change system.</p>
+      </div>
+      
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Traditional Banks</th>
+            <th>Budgeting Apps</th>
+            <th>Neobanks</th>
+            <th>Balancc</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Money Organization</td>
+            <td class="cross">❌</td>
+            <td class="partial">⚠️ Manual</td>
+            <td class="partial">⚠️ Basic</td>
+            <td class="check">✅ Automatic</td>
+          </tr>
+          <tr>
+            <td>Bill Automation</td>
+            <td class="cross">❌</td>
+            <td class="cross">❌</td>
+            <td class="partial">⚠️ Limited</td>
+            <td class="check">✅ Full</td>
+          </tr>
+          <tr>
+            <td>Spending Guardrails</td>
+            <td class="cross">❌</td>
+            <td class="cross">❌</td>
+            <td class="cross">❌</td>
+            <td class="check">✅ Built-in</td>
+          </tr>
+          <tr>
+            <td>Interest on Savings</td>
+            <td class="partial">⚠️ Low</td>
+            <td class="cross">❌</td>
+            <td class="partial">⚠️ Low</td>
+            <td class="check">✅ Competitive</td>
+          </tr>
+          <tr>
+            <td>Behavioral Design</td>
+            <td class="cross">❌</td>
+            <td class="cross">❌</td>
+            <td class="cross">❌</td>
+            <td class="check">✅ Core Focus</td>
+          </tr>
+          <tr>
+            <td>Requires Daily Effort</td>
+            <td>N/A</td>
+            <td class="cross">✅ Yes</td>
+            <td class="partial">⚠️ Some</td>
+            <td class="check">❌ No</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="moat-grid">
+        <div class="moat-card">
+          <h3>Behavioral Architecture</h3>
+          <p>Built on psychology, not just features. The system enforces discipline — when your food bag is empty, you can't spend food money on clothes.</p>
+        </div>
+        <div class="moat-card">
+          <h3>Bill Payment Network</h3>
+          <p>Recurring revenue from essential transactions users can't skip. Once set up, users don't switch.</p>
+        </div>
+        <div class="moat-card">
+          <h3>Discipline-First Design</h3>
+          <p>Bags & Vaults create "guardrails" not "guidelines." The system does the discipline, not the user.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traction -->
+  <section id="traction" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">Traction</div>
+        <h2 class="slide-title">Early Validation</h2>
+        <p class="slide-subtitle">Real users. Real transactions. Real love.</p>
+      </div>
+      
+      <div class="traction-grid">
+        <div class="traction-card">
+          <div class="traction-value">✅</div>
+          <div class="traction-label">Live on iOS & Android</div>
+        </div>
+        <div class="traction-card">
+          <div class="traction-value">✅</div>
+          <div class="traction-label">Full KYC Onboarding</div>
+        </div>
+        <div class="traction-card">
+          <div class="traction-value">✅</div>
+          <div class="traction-label">Bill Automation Live</div>
+        </div>
+        <div class="traction-card">
+          <div class="traction-value">✅</div>
+          <div class="traction-label">Licensed Custodian Partner</div>
+        </div>
+      </div>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"I finally feel in control of my money. My rent bag makes sure I never accidentally spend my rent money."</p>
+          <div class="testimonial-author">— Balancc User</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Setting up my bills once and forgetting about them has been life-changing. No more late fees."</p>
+          <div class="testimonial-author">— Balancc User</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Ask -->
+  <section id="ask" class="pitch-slide ask-section">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">The Ask</div>
+        <div class="ask-amount">$200,000</div>
+        <div class="ask-type">Pre-Seed Round</div>
+      </div>
+      
+      <div class="use-of-funds">
+        <div class="fund-item">
+          <div class="fund-percent">40%</div>
+          <div class="fund-amount">$80,000</div>
+          <div class="fund-label">Product & Engineering</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-percent">30%</div>
+          <div class="fund-amount">$60,000</div>
+          <div class="fund-label">Growth & Marketing</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-percent">15%</div>
+          <div class="fund-amount">$30,000</div>
+          <div class="fund-label">Operations & Compliance</div>
+        </div>
+        <div class="fund-item">
+          <div class="fund-percent">15%</div>
+          <div class="fund-amount">$30,000</div>
+          <div class="fund-label">Reserve</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Invest -->
+  <section class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">Why Invest Now</div>
+        <h2 class="slide-title">The Opportunity</h2>
+      </div>
+      
+      <div class="moat-grid">
+        <div class="moat-card">
+          <h3>✅ Proven Demand</h3>
+          <p>Real users. Real transactions. Real love. Not a hypothesis — a working product.</p>
+        </div>
+        <div class="moat-card">
+          <h3>✅ Clear Monetization</h3>
+          <p>5 revenue streams from day one. Bill payment fees alone create recurring revenue.</p>
+        </div>
+        <div class="moat-card">
+          <h3>✅ Massive Market</h3>
+          <p>Africa's fintech boom is just beginning. $65B projected by 2030.</p>
+        </div>
+        <div class="moat-card">
+          <h3>✅ Unique Positioning</h3>
+          <p>Not another budgeting app — a behavior-change system with built-in payments.</p>
+        </div>
+        <div class="moat-card">
+          <h3>✅ Capital Efficient</h3>
+          <p>Small raise, focused milestones, path to profitability.</p>
+        </div>
+        <div class="moat-card">
+          <h3>✅ Licensed & Secure</h3>
+          <p>Funds held with Clearwater Trust Ltd. — a licensed financial custodian.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Picture -->
+  <section id="big-picture" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">The Big Picture</div>
+        <h2 class="slide-title">From Money Management to Financial Operating System</h2>
+        <p class="slide-subtitle">Each Bag & Vault creates multiple revenue streams. Each user becomes a gateway to their entire network.</p>
+      </div>
+      
+      <div class="evolution-block">
+        <div class="evolution-row">
+          <div class="evolution-label">Today</div>
+          <div class="evolution-flow">
+            <div class="evolution-item">
+              <span class="evolution-icon">💳</span>
+              <span class="evolution-name">Wallet</span>
+              <span class="evolution-desc">organize</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item">
+              <span class="evolution-icon">🛍️</span>
+              <span class="evolution-name">Bags</span>
+              <span class="evolution-desc">spend</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item">
+              <span class="evolution-icon">🔒</span>
+              <span class="evolution-name">Vaults</span>
+              <span class="evolution-desc">save</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item">
+              <span class="evolution-icon">📋</span>
+              <span class="evolution-name">Bills</span>
+              <span class="evolution-desc">automate</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item">
+              <span class="evolution-icon">✨</span>
+              <span class="evolution-name">Earn</span>
+              <span class="evolution-desc">yield</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="evolution-row tomorrow">
+          <div class="evolution-label">Tomorrow</div>
+          <div class="evolution-flow">
+            <div class="evolution-item highlight">
+              <span class="evolution-icon">💰</span>
+              <span class="evolution-name">Credit</span>
+              <span class="evolution-desc">advance</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item highlight">
+              <span class="evolution-icon">📈</span>
+              <span class="evolution-name">Invest</span>
+              <span class="evolution-desc">grow</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item highlight">
+              <span class="evolution-icon">🛡️</span>
+              <span class="evolution-name">Insure</span>
+              <span class="evolution-desc">protect</span>
+            </div>
+            <div class="evolution-arrow">→</div>
+            <div class="evolution-item highlight">
+              <span class="evolution-icon">🌍</span>
+              <span class="evolution-name">Send</span>
+              <span class="evolution-desc">remit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="expansion-grid">
+        <div class="expansion-card">
+          <h3>💰 Credit</h3>
+          <p>Salary advance, Bag overdraft, Vault-backed loans</p>
+          <div class="expansion-revenue">Interest + fees</div>
+        </div>
+        <div class="expansion-card">
+          <h3>📈 Invest</h3>
+          <p>Round-ups, DCA into crypto/stocks, Investment Vaults</p>
+          <div class="expansion-revenue">Management fees</div>
+        </div>
+        <div class="expansion-card">
+          <h3>🛡️ Insure</h3>
+          <p>Rent protection, device insurance, health micro-plans</p>
+          <div class="expansion-revenue">Commissions</div>
+        </div>
+        <div class="expansion-card">
+          <h3>🌍 Send</h3>
+          <p>Remittances, bill splitting, cross-border transfers</p>
+          <div class="expansion-revenue">Transfer fees</div>
+        </div>
+        <div class="expansion-card">
+          <h3>👥 Social</h3>
+          <p>Shared Bags, Group Vaults (Ajo), Family accounts</p>
+          <div class="expansion-revenue">Premium features + viral growth</div>
+        </div>
+      </div>
+      
+      <div class="quote-block" style="margin-top: 48px;">
+        <p>One app. Multiple products. Compounding revenue per user.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="pitch-container">
+      <h2>Let's Build Together</h2>
+      <p>Balancc was built for the gap between knowing and doing. Help us close that gap for millions.</p>
+      <div class="cta-buttons">
+        <a href="mailto:business@balan.cc" class="btn-primary">Contact Us</a>
+        <a href="/" class="btn-secondary">Visit Our Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pitch-footer">
+    <div class="pitch-container">
+      <p>© 2026 Balancc. <a href="https://linkedin.com/company/balancchq" target="_blank">@balancchq</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
