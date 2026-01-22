@@ -5,7 +5,7 @@
 
 # Slide 1: The Hook
 
-## "I earn money, but I don't feel in control of it."
+## "I earn money, but I keep spending money I shouldn't."
 
 **This is what millions of people say every month.**
 
@@ -19,11 +19,11 @@ They're not broke. They have income. But somehow, money still slips away.
 
 ## Traditional Banking is Broken for the Modern Worker
 
-### The Reality:
-- **72% of adults** feel anxious about their finances — even those with stable incomes
-- **Bills, spending, savings, and plans** all live in one account — creating chaos
-- Budgeting apps **require daily tracking** — most people quit within 2 weeks
-- Existing solutions tell you *what happened* — they don't **help you follow through**
+### The Reality (Nigeria Financial Habits Survey 2025):
+- **65.7% want automatic savings** — but existing tools require daily effort
+- **36.9% don't track spending at all** — not lazy, just overwhelmed. They need structure, not spreadsheets
+- Only **5.2% use budgeting apps** — tracking doesn't work. Automation does
+- People give up because tools ask too much — they need a system that works quietly
 
 ### The Gap:
 > **Knowing how to manage money ≠ Actually doing it**
@@ -36,7 +36,7 @@ People don't need another tracker. They need a **system that does the work for t
 
 ## Balancc: Money Management That Works Without Daily Effort
 
-We give your money **structure** — so you don't have to think about it every day.
+65.7% of Nigerians want automatic savings. We give your money **structure** — set it up once, let the system do the rest.
 
 ### Three Simple Concepts:
 
@@ -177,28 +177,26 @@ Interest earned on aggregate user deposits before payout
 
 ## Early Validation
 
-### 🚀 Product
-- Live app on iOS & Android
-- Full KYC onboarding
-- Bill payment automation live
-- Funds secured with **Clearwater Trust Ltd.** (licensed custodian)
+### 📈 Key Metrics
+| Metric | Value | Note |
+|--------|-------|------|
+| **Active Users** | ~200 | Controlled early access rollout |
+| **Transaction Volume** | $[X]K | Monthly GMV |
+| **Monthly Retention** | [X]% | Users who return weekly |
+| **Monthly Revenue** | <$1K | Early monetization |
 
-### 📈 Growth Metrics
-| Metric | Value |
-|--------|-------|
-| **Total Signups** | [PLACEHOLDER] |
-| **Monthly Active Users** | [PLACEHOLDER] |
-| **Total Transaction Volume** | $[PLACEHOLDER] |
-| **Bills Paid Through Balancc** | [PLACEHOLDER] |
-| **Average Vault Balance** | $[PLACEHOLDER] |
-| **User Retention (30-day)** | [PLACEHOLDER]% |
+> **Why limited users?** We're deliberately rolling out early access to maintain product quality and iterate based on real feedback. Growth isn't gated by demand — it's gated by our choice to build right before scaling fast.
+
+### ✅ Product Milestones
+- ✅ Live on iOS & Android
+- ✅ Full KYC onboarding
+- ✅ Bill payment automation live
+- ✅ Licensed custodian partner (Fincra Technologies Limited.)
 
 ### 💬 User Love
 > "I finally feel in control of my money. My rent bag makes sure I never accidentally spend my rent money."
-> — [PLACEHOLDER: User testimonial]
 
 > "Setting up my bills once and forgetting about them has been life-changing. No more late fees."
-> — [PLACEHOLDER: User testimonial]
 
 ---
 
@@ -253,39 +251,61 @@ Interest earned on aggregate user deposits before payout
 
 ## Built by People Who Understand the Problem
 
-### [PLACEHOLDER: Founder Name] — CEO
-[PLACEHOLDER: Background, relevant experience, why they're the right person]
+> "We built Balancc because we were the target user. We earn money. We still overspend. We needed a system, not willpower."
 
-### [PLACEHOLDER: Co-founder Name] — CTO
-[PLACEHOLDER: Technical background, previous builds]
+### [Founder Name] — CEO & Co-founder
+[Background — e.g., "5+ years in fintech product. Previously at X. Built products used by Y users."]
 
-### [PLACEHOLDER: Other Key Team Members]
-[PLACEHOLDER: Roles and backgrounds]
+### [Co-founder Name] — CTO & Co-founder
+[Background — e.g., "Full-stack engineer. Previously built Z. Shipped products at scale."]
 
 ### Advisors
 - [PLACEHOLDER: Advisor names and credentials]
 
 ---
 
-# Slide 14: The Ask
+# Slide 14: Why Now
+
+## The Perfect Storm for Behavior-First Fintech
+
+Three forces are converging to make this the right moment.
+
+### 📱 63.9% — Mobile Money Dominance
+Nigerians already manage money on their phones (Opay, Palmpay). The behavior is trained — they just need better tools. We're not teaching new habits, we're upgrading existing ones.
+
+### 🤖 65.7% — Automation Demand is Proven
+Our survey shows two-thirds want automatic savings but can't find tools that deliver. The demand exists — supply doesn't. That's our gap.
+
+### 💰 $65B — African Fintech Boom
+The market is projected to hit $65B by 2030. Investors are pouring in. Infrastructure (KYC, payments, banking-as-a-service) is finally mature enough to build on.
+
+### 📉 5.2% — Budgeting Apps Failed
+Only 1 in 20 use budgeting apps — the rest gave up. The market is primed for a new approach. We're not competing with budgeting apps; we're replacing them with automation.
+
+> **The infrastructure is ready. The behavior is trained. The demand is proven. The competition is weak. Now is the time.**
+
+---
+
+# Slide 15: The Ask
 
 ## Raising $200,000 Pre-Seed
 
+**18-Month Runway**
+
 ### Use of Funds
 
-| Category | Allocation | Purpose |
-|----------|------------|---------|
-| **Product & Engineering** | 40% ($80K) | Mobile app improvements, new features, infrastructure |
-| **Growth & Marketing** | 30% ($60K) | User acquisition, content, influencer partnerships |
-| **Operations & Compliance** | 20% ($40K) | Licensing, legal, customer support |
-| **Reserve** | 10% ($20K) | Working capital, contingency |
+| Category | Allocation | Milestone |
+|----------|------------|-----------|
+| **Product & Engineering** | 40% ($80K) | Launch automated bill pay & smart allocation features |
+| **Growth & Marketing** | 40% ($80K) | Scale to 8,000+ active users in 12 months |
+| **Operations & Reserve** | 20% ($40K) | Secure partnerships & payment licenses |
 
-### Milestones This Funding Achieves (12-18 months):
-- [ ] [PLACEHOLDER: X] monthly active users
+### What This Funding Achieves:
+- [ ] 8,000+ monthly active users
 - [ ] [PLACEHOLDER: $X] monthly transaction volume
-- [ ] Launch in [PLACEHOLDER: 2-3 additional markets]
-- [ ] [PLACEHOLDER: Key product feature] release
-- [ ] Path to seed round at $[PLACEHOLDER] valuation
+- [ ] Automated bill payment & smart allocation features live
+- [ ] Key partnership & licensing milestones secured
+- [ ] Path to seed round
 
 ---
 
@@ -384,7 +404,7 @@ CEO, Balancc
 | [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] | [PLACEHOLDER] |
 
 ### A3: Regulatory & Compliance
-- Funds held with **Clearwater Trust Ltd.** — licensed financial custodian
+- Funds held with **Fincra Technologies Limited.** — licensed financial custodian
 - KYC/AML compliant onboarding
 - [PLACEHOLDER: Any additional licenses or partnerships]
 
@@ -420,7 +440,7 @@ CEO, Balancc
 **Answer:** 
 1. **Behavioral design** — built on psychology research, not just features
 2. **Bill payment network** — recurring revenue from essential transactions users can't skip
-3. **Trust** — licensed custodian partnership (Clearwater Trust)
+3. **Trust** — licensed custodian partnership (Fincra Technologies)
 4. **Network effects** — group savings features create virality
 
 ### "Can you scale this?"

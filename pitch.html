@@ -251,6 +251,16 @@
       font-style: italic;
     }
     
+    .citation-block a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    
+    .citation-block a:hover {
+      opacity: 1;
+    }
+    
     /* Solution Section */
     .solution-grid {
       display: grid;
@@ -452,6 +462,149 @@
       font-size: 0.95rem;
     }
     
+    .traction-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      margin-top: 4px;
+    }
+    
+    .traction-context {
+      background: rgba(198, 255, 0, 0.08);
+      border: 1px solid rgba(198, 255, 0, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 32px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .traction-milestones {
+      margin-top: 48px;
+    }
+    
+    .traction-milestones h3 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+    
+    .milestone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    
+    .milestone-item {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+    }
+    
+    .milestone-item.complete {
+      border-color: rgba(198, 255, 0, 0.3);
+    }
+    
+    /* Team Section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    
+    .team-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+    }
+    
+    .team-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: var(--border);
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+    
+    .team-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .team-role {
+      color: var(--primary);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    
+    .team-bio {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    
+    .team-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    
+    .team-links a {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    
+    .team-links a:hover {
+      color: var(--primary);
+    }
+    
+    /* Why Now Section */
+    .why-now-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    
+    .why-now-card {
+      background: rgba(252, 248, 230, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    
+    .why-now-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .why-now-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    
+    .why-now-stat {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    
     .testimonial-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -493,6 +646,17 @@
     .ask-type {
       font-size: 1.5rem;
       color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    
+    .ask-runway {
+      display: inline-block;
+      background: rgba(198, 255, 0, 0.15);
+      color: var(--primary);
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: 600;
       margin-bottom: 48px;
     }
     
@@ -525,6 +689,15 @@
     
     .fund-label {
       font-weight: 600;
+    }
+    
+    .fund-milestone {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.4;
     }
     
     /* Moat Section */
@@ -765,10 +938,9 @@
       <div class="pitch-nav-links">
         <a href="#problem">Problem</a>
         <a href="#solution">Solution</a>
-        <a href="#business-model">Business Model</a>
         <a href="#traction">Traction</a>
+        <a href="#team">Team</a>
         <a href="#ask">The Ask</a>
-        <a href="#big-picture">Big Picture</a>
         <a href="mailto:business@balan.cc" class="btn-primary">Contact Us</a>
       </div>
     </div>
@@ -787,8 +959,8 @@
           <div class="pitch-stat-label">Raising Pre-Seed</div>
         </div>
         <div class="pitch-stat">
-          <div class="pitch-stat-value">72%</div>
-          <div class="pitch-stat-label">Adults Feel Financial Anxiety</div>
+          <div class="pitch-stat-value">65.7%</div>
+          <div class="pitch-stat-label">Want Automatic Savings</div>
         </div>
         <div class="pitch-stat">
           <div class="pitch-stat-value">$65B</div>
@@ -809,19 +981,19 @@
       
       <div class="problem-grid">
         <div class="problem-card">
-          <div class="problem-card-stat">72%</div>
-          <h3>Financial Anxiety</h3>
-          <p>Adults feel anxious about their finances — even those with stable incomes.</p>
+          <div class="problem-card-stat">65.7%</div>
+          <h3>Want Automation</h3>
+          <p>Nigerians want automatic savings — but existing tools require daily effort.</p>
         </div>
         <div class="problem-card">
-          <div class="problem-card-stat">2 weeks</div>
-          <h3>App Abandonment</h3>
-          <p>Most people quit budgeting apps within 2 weeks because they require daily tracking.</p>
+          <div class="problem-card-stat">36.9%</div>
+          <h3>Give Up Tracking</h3>
+          <p>Over a third don't track spending — not lazy, just overwhelmed. They need structure, not spreadsheets.</p>
         </div>
         <div class="problem-card">
-          <div class="problem-card-stat">1 account</div>
-          <h3>No Structure</h3>
-          <p>Bills, spending, savings, and plans all live in one account — creating chaos.</p>
+          <div class="problem-card-stat">5.2%</div>
+          <h3>Use Budgeting Apps</h3>
+          <p>Only 1 in 20 use budgeting apps. Tracking doesn't work. Automation does.</p>
         </div>
       </div>
       
@@ -830,7 +1002,7 @@
       </div>
       
       <div class="citation-block">
-        <p>Sources: American Psychological Association (2023) • Deloitte Global Millennial Survey (2022) • Financial Health Network (2023)</p>
+        <p>Sources: <a href="/media/Nigeria-Financial-Habits-Survey-2025.pdf" target="_blank">Nigeria Financial Habits Survey 2025</a> • American Psychological Association (2023) • Deloitte Global Millennial Survey (2022)</p>
       </div>
     </div>
   </section>
@@ -841,7 +1013,7 @@
       <div class="slide-header">
         <div class="slide-number">The Solution</div>
         <h2 class="slide-title">Balancc: Money Management That Works Without Daily Effort</h2>
-        <p class="slide-subtitle">We give your money structure — so you don't have to think about it every day. Set it up once. Let the system do the rest.</p>
+        <p class="slide-subtitle">65.7% of Nigerians want automatic savings. We give your money structure — set it up once, let the system do the rest.</p>
       </div>
       
       <div class="solution-grid">
@@ -1019,20 +1191,38 @@
       
       <div class="traction-grid">
         <div class="traction-card">
-          <div class="traction-value">✅</div>
-          <div class="traction-label">Live on iOS & Android</div>
+          <div class="traction-value">~100</div>
+          <div class="traction-label">Active Users</div>
+          <div class="traction-note">Controlled early access rollout</div>
         </div>
         <div class="traction-card">
-          <div class="traction-value">✅</div>
-          <div class="traction-label">Full KYC Onboarding</div>
+          <div class="traction-value">$10K+</div>
+          <div class="traction-label">Transaction Volume</div>
+          <div class="traction-note">Monthly GMV</div>
         </div>
         <div class="traction-card">
-          <div class="traction-value">✅</div>
-          <div class="traction-label">Bill Automation Live</div>
+          <div class="traction-value">64%</div>
+          <div class="traction-label">Monthly Retention</div>
+          <div class="traction-note">Users who return weekly</div>
         </div>
         <div class="traction-card">
-          <div class="traction-value">✅</div>
-          <div class="traction-label">Licensed Custodian Partner</div>
+          <div class="traction-value"><$1K</div>
+          <div class="traction-label">Monthly Revenue</div>
+          <div class="traction-note">Early monetization</div>
+        </div>
+      </div>
+      
+      <div class="traction-context">
+        <p><strong>Why limited users?</strong> We're deliberately rolling out early access to maintain product quality and iterate based on real feedback. Growth isn't gated by demand — it's gated by our choice to build right before scaling fast.</p>
+      </div>
+      
+      <div class="traction-milestones">
+        <h3>Product Milestones</h3>
+        <div class="milestone-grid">
+          <div class="milestone-item complete">✅ Live on iOS & Android</div>
+          <div class="milestone-item complete">✅ Full KYC Onboarding</div>
+          <div class="milestone-item complete">✅ Bill Automation Live</div>
+          <div class="milestone-item complete">✅ Licensed Custodian (Fincra Technologies)</div>
         </div>
       </div>
       
@@ -1049,6 +1239,82 @@
     </div>
   </section>
 
+  <!-- Team -->
+  <section id="team" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">The Team</div>
+        <h2 class="slide-title">Built by People Who Understand the Problem</h2>
+        <p class="slide-subtitle">We've lived this problem. Now we're solving it.</p>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo" style="border-radius: 50%;overflow: hidden;"><img style="width: 100%; height: 100%; object-fit: cover;" src="https://media.licdn.com/dms/image/v2/D4D03AQHbs3Hw7RoeAg/profile-displayphoto-shrink_200_200/B4DZWJ6GN.GkAk-/0/1741775466439?e=1770854400&v=beta&t=5Z4OA5ki-j0C6vk3MqqaOzXV06pHU7d_uj6xDWj18zM" alt="Emmanuel Popoola" /></div>
+          <div class="team-name">Emmanuel Popoola</div>
+          <div class="team-role">CEO & Co-founder</div>
+          <p class="team-bio">5+ years in the fintech industry. Previously worked at Quidax, Fincra, and Palremit. Built products that helped people send and receive billions across continents.</p>
+          <div class="team-links">
+            <a href="https://linkedin.com/in/emma-popoola">LinkedIn</a>
+            <a href="https://x.com/hemmayo">Twitter</a>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">👤</div>
+          <div class="team-name">Stanley Osuozah</div>
+          <div class="team-role">COO & Co-founder</div>
+          <p class="team-bio">Full-stack engineer. Previously built Z. Shipped products at scale.</p>
+          <div class="team-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="quote-block" style="margin-top: 48px;">
+        <p>"We built Balancc because we were the target user. We earn money. We still overspend. We needed a system, not willpower."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Now -->
+  <section id="why-now" class="pitch-slide">
+    <div class="pitch-container">
+      <div class="slide-header">
+        <div class="slide-number">Why Now</div>
+        <h2 class="slide-title">The Perfect Storm for Behavior-First Fintech</h2>
+        <p class="slide-subtitle">Three forces are converging to make this the right moment.</p>
+      </div>
+      
+      <div class="why-now-grid">
+        <div class="why-now-card">
+          <div class="why-now-stat">63.9%</div>
+          <h3>Mobile Money Dominance</h3>
+          <p>Nigerians already manage money on their phones (Opay, Palmpay). The behavior is trained — they just need better tools. We're not teaching new habits, we're upgrading existing ones.</p>
+        </div>
+        <div class="why-now-card">
+          <div class="why-now-stat">65.7%</div>
+          <h3>Automation Demand is Proven</h3>
+          <p>Our survey shows two-thirds want automatic savings but can't find tools that deliver. The demand exists — supply doesn't. That's our gap.</p>
+        </div>
+        <div class="why-now-card">
+          <div class="why-now-stat">$65B</div>
+          <h3>African Fintech Boom</h3>
+          <p>The market is projected to hit $65B by 2030. Investors are pouring in. Infrastructure (KYC, payments, banking-as-a-service) is finally mature enough to build on.</p>
+        </div>
+        <div class="why-now-card">
+          <div class="why-now-stat">5.2%</div>
+          <h3>Budgeting Apps Failed</h3>
+          <p>Only 1 in 20 use budgeting apps — the rest gave up. The market is primed for a new approach. We're not competing with budgeting apps; we're replacing them with automation.</p>
+        </div>
+      </div>
+      
+      <div class="quote-block" style="margin-top: 48px;">
+        <p>The infrastructure is ready. The behavior is trained. The demand is proven. The competition is weak. Now is the time.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- The Ask -->
   <section id="ask" class="pitch-slide ask-section">
     <div class="pitch-container">
@@ -1056,6 +1322,7 @@
         <div class="slide-number">The Ask</div>
         <div class="ask-amount">$200,000</div>
         <div class="ask-type">Pre-Seed Round</div>
+        <div class="ask-runway">18-Month Runway</div>
       </div>
       
       <div class="use-of-funds">
@@ -1063,21 +1330,19 @@
           <div class="fund-percent">40%</div>
           <div class="fund-amount">$80,000</div>
           <div class="fund-label">Product & Engineering</div>
+          <div class="fund-milestone">→ Launch automated bill pay & smart allocation features</div>
         </div>
         <div class="fund-item">
-          <div class="fund-percent">30%</div>
-          <div class="fund-amount">$60,000</div>
+          <div class="fund-percent">40%</div>
+          <div class="fund-amount">$80,000</div>
           <div class="fund-label">Growth & Marketing</div>
+          <div class="fund-milestone">→ Scale to 8,000+ active users in 12 months</div>
         </div>
         <div class="fund-item">
-          <div class="fund-percent">15%</div>
-          <div class="fund-amount">$30,000</div>
-          <div class="fund-label">Operations & Compliance</div>
-        </div>
-        <div class="fund-item">
-          <div class="fund-percent">15%</div>
-          <div class="fund-amount">$30,000</div>
-          <div class="fund-label">Reserve</div>
+          <div class="fund-percent">20%</div>
+          <div class="fund-amount">$40,000</div>
+          <div class="fund-label">Operations & Reserve</div>
+          <div class="fund-milestone">→ Secure partnerships & payment licenses</div>
         </div>
       </div>
     </div>
@@ -1114,7 +1379,7 @@
         </div>
         <div class="moat-card">
           <h3>✅ Licensed & Secure</h3>
-          <p>Funds held with Clearwater Trust Ltd. — a licensed financial custodian.</p>
+          <p>Funds held with Fincra Technologies Limited. — a licensed financial custodian.</p>
         </div>
       </div>
     </div>
